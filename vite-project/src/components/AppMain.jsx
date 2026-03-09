@@ -216,15 +216,23 @@ export default function AppMain(){
 </section>
 
 <section id="comicsSection">
-  <div class="container">
-    <div class="row">
-      <div class="col">
+   <div className="container">
+    <div className="row">
+      {
+        comics.map((comic) =>(
+          <div key={comic.id} className="col-2">
+            <img src={comic.thumb} className="img-fluid"></img>
+          </div>
+        ))}
+          
         
-
+      
+      <div className="col">
+        <h3>LOAD MORE</h3>
+      </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </main>
     )
 }
