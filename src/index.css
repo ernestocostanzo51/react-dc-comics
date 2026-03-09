@@ -13,10 +13,10 @@ justify-content: center;
 
 .facebook,.youtube,.twitter,.pinterest,.position{
   border-radius: 50%;
-  background-color: gray;
+  background-color: transparent;
   margin: 1rem;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: solid transparent;
 }
 

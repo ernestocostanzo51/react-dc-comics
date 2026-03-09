@@ -1,3 +1,10 @@
+import facebook from './img/footer-facebook.png'
+import youtube from './img/footer-youtube.png'
+import twitter from './img/footer-twitter.png'
+import pinterest from './img/footer-pinterest.png'
+import periscope from './img/footer-periscope.png'
+
+
 export default function AppFooter(){
     return(
         <footer class="bg-body-tertiary">
@@ -8,21 +15,25 @@ export default function AppFooter(){
                     </div>
                     <div class="col">
                         <a class="text-primary">FOLLOW US</a>
-                        <button class="facebook"></button>
+                        <button class="facebook">
+                        <img src={facebook}></img>
+                        </button>
+
                     <button class="twitter">
-                        <img src=""></img>
+
+                        <img src={twitter}></img>
 
                     </button>
                     <button class="youtube">
-                        <img src=""></img>
+                        <img src={youtube}></img>
 
                     </button>
                     <button class="pinterest">
-                        <img src=""></img>
+                        <img src={pinterest}></img>
 
                     </button>
                     <button class="position">
-                        <img src=""></img>
+                        <img src={periscope}></img>
 
                     </button>
                     </div>
