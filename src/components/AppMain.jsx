@@ -1,3 +1,4 @@
+import sfondo from './img/footer-bg.jpg'
 const comics = [
   {
     id: 1,
@@ -156,15 +157,14 @@ const comics = [
 export default function AppMain(){
     return(
         <main>
-            <section class="dc text-white py-5">
-  <div class="container bg-dark">
+            <section class="dc text-white">
+  <div class="container">
     <div class="row">
-      
       <div class="col mb-4">
         <h5 class="fw-bold mb-3">DC COMICS</h5>
         <ul class="list-unstyled">
           <li><a href="#" class="text-secondary text-decoration-none">Characters</a></li>
-          <li><a href="#comicsSection" class="text-secondary text-decoration-none">Comics</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Comics</a></li>
           <li><a href="#" class="text-secondary text-decoration-none">Movies</a></li>
           <li><a href="#" class="text-secondary text-decoration-none">TV</a></li>
           <li><a href="#" class="text-secondary text-decoration-none">Games</a></li>
@@ -216,23 +216,23 @@ export default function AppMain(){
 </section>
 
 <section id="comicsSection">
-   <div className="container bg-dark">
-    <div className="row">
+  
+   <div className="container bg-dark pt-5">
+    <div className="CurrentSeries pt-2 pb-2"><h5>CURRENT SERIES</h5></div>
+    <div className="row">  
       {
         comics.map((comic) =>(
-          <div key={comic.id} className="col-2 g-1">
+          <div key={comic.id} className="col-2">
             <img src={comic.thumb} className="img-fluid"></img>
-            <p className="text-light mt-4 p-2">{comic.title}</p>
+            <p className="text-light mt-4">{comic.title}</p>
           </div>
         ))}
           
         
-      
-      <div className="col">
-        <h3>LOAD MORE</h3>
       </div>
-      </div>
+      <h3>LOAD MORE</h3>
     </div>
+    
   </section>
 </main>
     )

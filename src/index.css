@@ -1,0 +1,30 @@
+@import url('bootstrap');
+
+
+body {
+  font-family: 'Open Sans Variable', sans-serif;
+}
+
+.dc{
+background-image: url(./components/img/footer-bg.jpg);
+background-repeat: no-repeat;
+justify-content: center;
+}
+
+.facebook,.youtube,.twitter,.pinterest,.position{
+  border-radius: 50%;
+  background-color: gray;
+  margin: 1rem;
+  width: 25px;
+  height: 25px;
+  border: solid transparent;
+}
+
+.CurrentSeries{
+  width: 15rem;
+  border: solid transparent;
+  background-color: blue;
+  color: white;
+  transform: translate(50%,-140%);
+  text-align: center;
+}
