@@ -216,12 +216,13 @@ export default function AppMain(){
 </section>
 
 <section id="comicsSection">
-   <div className="container">
+   <div className="container bg-dark">
     <div className="row">
       {
         comics.map((comic) =>(
-          <div key={comic.id} className="col-2">
+          <div key={comic.id} className="col-2 g-1">
             <img src={comic.thumb} className="img-fluid"></img>
+            <p className="text-light mt-4 p-2">{comic.title}</p>
           </div>
         ))}
           
