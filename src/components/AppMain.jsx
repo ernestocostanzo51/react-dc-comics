@@ -1,4 +1,4 @@
-import sfondo from './img/footer-bg.jpg'
+
 const comics = [
   {
     id: 1,
